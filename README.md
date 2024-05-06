@@ -1,7 +1,10 @@
 # Periodic Table
 *get info about specific element on the periodic table*
 
-The data that this api returns is taken from https://gist.github.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee
+The data that this site uses is taken from https://gist.github.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee
+
+## Try it on Vercel [here](https://periodic-table-8ncilctct-faridins-projects.vercel.app/)
+
 
 Installation
 =============
@@ -12,7 +15,6 @@ $ pip install -r requirements.txt
 ```
 Run
 =============
-I haven't hosted this api yet, so for now you have to host it by youself.
 ```sh
 $ python run.py
 ```
