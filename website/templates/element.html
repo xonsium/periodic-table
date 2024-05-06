@@ -1,0 +1,79 @@
+
+
+{% extends "base.html" %} {% block head %}
+{% endblock head %} {% block body %}
+
+<section class="center p-3">
+    <form action="/element">
+        
+        <div class="input-group">
+            <input type="text" name="element" class="form-control" placeholder="Search an element by symbol or atomic number">
+            <button type="submit" class="btn btn-light">
+                <img class="se" src="{{url_for('static', filename='search.png')}}" alt="">
+            </button>
+          </div>
+    </form>
+    <h2 align="center" class="name my-3">
+        <b>{{data.Element}} ({{data.Symbol}})</b>
+    </h2>
+        <div class="d-flex main justify-content-center">
+            <img src="static/images/{{data.Element.lower()}}.jpg" alt="" class="img-fluid me-3 mb-3 e-img">
+            <div class="info">
+                <div class="row">
+                    <div class="col">
+                    <p><b>Discoverer: </b>{{data.Discoverer}}</p>
+                    </div>
+                    <div class="col">
+                    <p><b>Year Inveneted: </b>{{data.Year}}</p>
+                    </div>
+                    <div class="col">
+                    <p><b>Element Type: </b>{{data.Type}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><b>Melting Point: </b>{{data.MeltingPoint}}</p>
+                    </div>
+                    <div class="col">
+                        <p><b>Boiling Point: </b>{{data.BoilingPoint}}</p>
+                    </div>
+                    <div class="col">
+                        <p><b>Normal State: </b>{{data.Phase}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><b>Period: </b>{{data.Period}}</p>
+                    </div>
+                    <div class="col">
+                        <p><b>Group: </b>{{data.Group}}</p>
+                    </div>
+                    <div class="col">
+                        <p><b>N of shells: </b>{{data.NumberofShells}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><b>N of electrons: </b>{{data.NumberofElectrons}}</p>
+                    </div>
+                    <div class="col">
+                        <p><b>N of neutrons: </b>{{data.NumberofNeutrons}}</p>
+                    </div>
+                    <div class="col">
+                        <p><b>N of isotopes: </b>{{data.NumberofIsotopes}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><b>Atomic mass: </b>{{data.AtomicMass}}</p>
+                    </div>
+                    <div class="col">
+                        <a class="" href="https://en.wikipedia.org/wiki/{{data.Element}}">More about {{data.Element}}</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</section>
+
+{% endblock body %}

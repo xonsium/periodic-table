@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block head %}
+{% endblock head %} {% block body %}
+
+<section class="center p-3">
+    <form action="/element">
+        <!-- <h3 align="center" class="my-3">
+            <u>Periodic Table</u>
+        </h3> -->
+        
+        <div class="input-group mb-3">
+            <input type="text" name="element" class="form-control" placeholder="Search an element by symbol or atomic number">
+            <button type="submit" class="btn btn-light">
+                <img class="se" src="{{url_for('static', filename='search.png')}}" alt="">
+            </button>
+          </div>
+    </form>
+    <img class="pt img-fluid " src="{{url_for('static', filename='p.png')}}" alt="">
+
+</section>
+
+{% endblock body %}
