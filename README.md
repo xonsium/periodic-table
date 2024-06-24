@@ -1,5 +1,5 @@
 # Periodic Table
-*get info about specific element on the periodic table*
+*get info about specific element on the periodic table.* Now has PWA functionality
 
 The data that this site uses is taken from https://gist.github.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee
 
