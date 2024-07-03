@@ -3,7 +3,7 @@
 
 The data that this site uses is taken from https://gist.github.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee
 
-## Try it on Vercel [here](https://periodic-table-8ncilctct-faridins-projects.vercel.app/)
+## [Try the website on Vercel here](https://periodic-table-8ncilctct-faridins-projects.vercel.app/)
 
 
 Installation
