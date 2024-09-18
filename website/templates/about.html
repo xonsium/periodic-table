@@ -1,21 +1,23 @@
 {% extends "base.html" %} {% block head %}
 {% endblock head %} {% block body %}
 
-<section class="center p-3">
-    <form action="/element">
-        <!-- <h3 align="center" class="my-3">
-            <u>Periodic Table</u>
-        </h3> -->
-        
-        <div class="input-group mb-3">
-            <input type="text" name="element" class="form-control" placeholder="Search an element by symbol or atomic number">
-            <button type="submit" class="btn btn-light">
-                <img class="se" src="{{url_for('static', filename='search.png')}}" alt="">
-            </button>
-          </div>
-    </form>
-    <img class="pt img-fluid " src="{{url_for('static', filename='pt.jpg')}}" alt="">
+<div style="text-align: center;">
 
-</section>
+  <section>
+    <h5>This website was made to help learn about elements fast and efficient</h5>
+    <br>
+    <h5>
+      All the data was taken from <a href="https://gist.github.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee">here</a>
+    </h5>
+    
+    <h4 class="my-3">
+        Created by <a href="https://xonsium.github.io/">Faridin Islam</a>
+    </h4>
+    <h4 class="my-3">
+      <a href="https://github.com/xonsium/periodic-table">Source Code</a>
+    </h4> 
+  </section>
+
+</div>
 
 {% endblock body %}
